@@ -9,6 +9,7 @@ if (!$conexion) {
 }
 
 
+$titulo_pagina = "Plataformas";
 
 require 'views/plataformas.view.php';
  ?>

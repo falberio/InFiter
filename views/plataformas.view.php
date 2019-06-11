@@ -1,58 +1,6 @@
 <?php require 'header.php'; ?>
 
-<div class="subheader">
-		<div class="contenedor contenedor-desplegar" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-			<i class="desplegar fas fa-chevron-down"></i>
-		</div>
 
-
-		<div class="contenedor collapse" id="collapseExample">
-			<div class="categorias">
-				<div class="categoria">
-					<a href="#generales">
-						<i class="fas fa-address-card"></i>
-						<p>Generales</p>
-					</a>
-				</div>
-
-				<div class="categoria">
-					<a href="#mp">
-						<i class="fas fa-money-check-alt"></i>
-						<p>Mercado Pago</p>
-					</a>
-				</div>
-
-				<div class="categoria">
-					<a href="#telecentro">
-						<i class="fas fa-ticket-alt"></i>
-						<p>Telecentro</p>
-					</a>
-				</div>
-
-				<div class="categoria">
-					<a href="#casillas">
-						<i class="fas fa-hdd"></i>
-						<p>Casillas</p>
-					</a>
-				</div>
-
-				<div class="categoria">
-					<a href="#gympass">
-						<i class="fas fa-desktop"></i>
-						<p>Gym Pass</p>
-					</a>
-				</div>
-
-				<div class="categoria">
-					<a href="#tsube">
-						<i class="fas fa-fingerprint"></i>
-						<p>Terminales SUBE</p>
-					</a>
-				</div>
-
-			</div>
-		</div>
-</div>
 
 <div class="contenedor accordion contenido" id="accordionExample">
 
