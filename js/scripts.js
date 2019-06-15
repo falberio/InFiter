@@ -126,3 +126,37 @@ subheader_login.addEventListener('mouseout',function(){
 });
 
 
+
+
+let logo = document.querySelector('#logo-mega');
+let boton_estilos_mega = document.querySelector('#boton-estilos-mega');
+let body = document.querySelector('#body');
+
+boton_estilos_mega.addEventListener('click',function(){
+	if(body.classList.contains('body-mega')){
+		body.classList.remove('body-mega');
+		boton_estilos_mega.classList.remove('estilos-mega-on');
+		logo.innerHTML = "<span>In<span id='logo-oculto'>side </span>Fi</span>ter";
+	} else{
+		body.classList.add('body-mega');
+		boton_estilos_mega.classList.add('estilos-mega-on');
+		logo.innerHTML = 'MEGATLON';
+	};
+});
+
+
+
+
+// function refrescarSedes(){
+// 	var sedes = document.getElementById("sedes").value;
+// }
+
+// function refrescarTurnos(){
+// 	var turnos = document.getElementById("turnos").value;
+// }
+
+
+// $('#sedes').change(function(){
+// 	var sedes = $(this).val();
+// 	$.get('../staff.php', {})
+// })

@@ -2,12 +2,21 @@
 
 function conexion($bd_config){
 	try {
-		$conexion = new PDO('mysql:host=localhost;dbname='.$bd_config['basedatos'],$bd_config['usuario'],$bd_config['pass']);
+		$conexion = new PDO('mysql:host=181.119.169.68;dbname='.$bd_config['basedatos'],$bd_config['usuario'],$bd_config['pass']);
 		return $conexion;
 	} catch (PDOException $e) {
 		return false;
 	}
 }
+
+// function conexion($bd_config){
+// 	try {
+// 		$conexion = new PDO('mysql:host=localhost;dbname='.$bd_config['basedatos'],$bd_config['usuario'],$bd_config['pass']);
+// 		return $conexion;
+// 	} catch (PDOException $e) {
+// 		return false;
+// 	}
+// }
 
 function limpiarDatos($datos){
 	$datos = trim($datos);
@@ -33,6 +42,21 @@ function obtener_anydesks($conexion){
 	$sentencia->execute();
 	return $sentencia->fetchAll();
 };
+
+function obtener_internos($conexion){
+	$sentencia = $conexion->prepare("SELECT * FROM internos");
+	$sentencia->execute();
+	return $sentencia->fetchAll();
+};
+
+
+
+function obtener_colaboradores($conexion,$where){
+	$sentencia = $conexion->prepare("SELECT * FROM colaboradores $where");
+	$sentencia->execute();
+	return $sentencia->fetchAll();
+};
+
 
 function obtener_faqs($conexion){
 	$sentencia = $conexion->prepare("SELECT * FROM faqs");

@@ -3,9 +3,9 @@
 define('RUTA','http://localhost/infiter');
 
 $bd_config = array(
-	'basedatos' => 'infiter',
-	'usuario' => 'root',
-	'pass' => ''
+	'basedatos' => 'megawiki_megafiter',
+	'usuario' => 'megawiki_alberio',
+	'pass' => '1487Sony!'
 );
 
 $blog_config = array(
@@ -13,8 +13,7 @@ $blog_config = array(
 );
 
 $blog_admin = array(
-	'usuario' => 'fran',
-	'password' => '123'
-);
-
+	'usuario' => 'mega',
+	'password' => '1234'
+)
  ?>

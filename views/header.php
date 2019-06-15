@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<script src="https://kit.fontawesome.com/d3d4fcb8d1.js"></script>
+	<link rel="stylesheet" href="<?php echo RUTA; ?>/librerias/alertify/css/alertify.css">
+	<link rel="stylesheet" href="<?php echo RUTA; ?>/librerias/alertify/css/themes/default.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?php echo RUTA; ?>/css/estilos.css">
-	<title>InFiter - <?php echo $titulo_pagina ?></title>
+	<title>infiter - <?php echo $titulo_pagina ?></title>
 </head>
-<body>
+<body id="body">
 <header>
 	<div class="logo izquierda">
-		<p><a href="<?php echo RUTA;  ?>"><span>infi</span>ter</a></p>
+		<p><a id="logo-mega" href="<?php echo RUTA;  ?>"><span>In<span id="logo-oculto">side </span>fi</span>ter</a></p>
 	</div>
 	
 	<div class="derecha">
@@ -24,11 +27,11 @@
 		<nav class="menu">
 			<ul>
 				<li id="boton-busqueda"><i class="fas fa-search"></i></li>
-				<li id="boton-faq">FAQ</li>
-				<li id="boton-instructivos">Instructivos</li>
-				<li id="boton-plataformas">Plataformas</li>
+				<li id="boton-faq"><a href="<?php echo RUTA . '/faq.php';  ?>">FAQ</a></li>
+				<li id="boton-instructivos"><a href="<?php echo RUTA . '/instructivos.php';  ?>">Instructivos</a></li>
+				<li id="boton-plataformas"><a href="<?php echo RUTA . '/plataformas.php';  ?>">Plataformas</a></li>
 				<li id="boton-login">Login</li>
-				<li><i class="fas fa-times-circle"></i></li>
+				<li id="boton-estilos-mega"><i class="fas fa-toggle-on"></i></i></li>
 			</ul>
 		</nav>
 	</div>
@@ -46,42 +49,42 @@
 		<div class="contenedor">
 			<div class="categorias">
 				<div class="categoria">
-					<a href="#generales">
+					<a href="<?php echo RUTA .'/plataformas.php' . '#generales';  ?>">
 						<i class="fas fa-address-card"></i>
 						<p>Generales</p>
 					</a>
 				</div>
 
 				<div class="categoria">
-					<a href="#mp">
+					<a href="<?php echo RUTA .'/plataformas.php' . '#mp';  ?>">
 						<i class="fas fa-money-check-alt"></i>
 						<p>Mercado Pago</p>
 					</a>
 				</div>
 
 				<div class="categoria">
-					<a href="#telecentro">
+					<a href="<?php echo RUTA .'/plataformas.php' . '#telecentro';  ?>">
 						<i class="fas fa-ticket-alt"></i>
 						<p>Telecentro</p>
 					</a>
 				</div>
 
 				<div class="categoria">
-					<a href="#casillas">
+					<a href="<?php echo RUTA .'/plataformas.php' . '#casillas';  ?>">
 						<i class="fas fa-hdd"></i>
 						<p>Casillas</p>
 					</a>
 				</div>
 
 				<div class="categoria">
-					<a href="#gympass">
+					<a href="<?php echo RUTA .'/plataformas.php' . '#gympass';  ?>">
 						<i class="fas fa-desktop"></i>
 						<p>Gym Pass</p>
 					</a>
 				</div>
 
 				<div class="categoria">
-					<a href="#tsube">
+					<a href="<?php echo RUTA .'/plataformas.php' . '#tsube';  ?>">
 						<i class="fas fa-fingerprint"></i>
 						<p>Terminales SUBE</p>
 					</a>
