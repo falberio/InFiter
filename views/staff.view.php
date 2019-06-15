@@ -28,7 +28,7 @@
 
 				
 
-				<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
+				<button type="submit" class="btn btn-primary">
 					<span class="fas fa-filter"></span>
 				</button>
 			</form>

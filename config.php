@@ -1,6 +1,6 @@
 <?php 
 
-define('RUTA','http://localhost/infiter');
+define('RUTA','http://localhost/megawiki');
 
 $bd_config = array(
 	'basedatos' => 'megawiki_megafiter',
